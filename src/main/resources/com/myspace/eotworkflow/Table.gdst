@@ -39,7 +39,86 @@
       <useRowNumber>false</useRowNumber>
     </attribute-column52>
   </attributeCols>
-  <conditionPatterns/>
+  <conditionPatterns>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>OEC to Bengt</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FactPattern>
+          <factType>AuthorityLimits</factType>
+          <isNegated>false</isNegated>
+          <window>
+            <parameters/>
+          </window>
+        </org.drools.workbench.models.datamodel.rule.FactPattern>
+        <org.drools.workbench.models.datamodel.rule.FromCompositeFactPattern>
+          <expression>
+            <parts>
+              <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                  <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                  <next class="org.drools.workbench.models.datamodel.rule.ExpressionMethod">
+                    <prev class="org.drools.workbench.models.datamodel.rule.ExpressionField" reference="../.."/>
+                    <name>compareTo</name>
+                    <classType>int</classType>
+                    <genericType>Integer</genericType>
+                    <params>
+                      <entry>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
+                          <index>0</index>
+                          <dataType>Float</dataType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionFormLine>
+                          <parts>
+                            <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
+                              <name>1500000</name>
+                              <classType>Float</classType>
+                              <genericType>Float</genericType>
+                            </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
+                          </parts>
+                          <index>0</index>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionFormLine>
+                      </entry>
+                    </params>
+                  </next>
+                  <name>givenamount</name>
+                  <classType>java.lang.Float</classType>
+                  <genericType>Float</genericType>
+                </next>
+                <name>limits</name>
+                <classType>AuthorityLimits</classType>
+                <genericType>AuthorityLimits</genericType>
+                <factType>AuthorityLimits</factType>
+              </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+              <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
+              <org.drools.workbench.models.datamodel.rule.ExpressionMethod reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next/next"/>
+            </parts>
+            <index>2147483647</index>
+          </expression>
+        </org.drools.workbench.models.datamodel.rule.FromCompositeFactPattern>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <typedDefaultValue>
+            <valueBoolean>false</valueBoolean>
+            <valueString></valueString>
+            <dataType>BOOLEAN</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>OEC to Bengt</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+  </conditionPatterns>
   <actionCols/>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
