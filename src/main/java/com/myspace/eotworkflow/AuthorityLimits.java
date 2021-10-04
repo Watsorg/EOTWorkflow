@@ -7,29 +7,99 @@ package com.myspace.eotworkflow;
 @javax.persistence.Entity
 public class AuthorityLimits implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "AUTHORITYLIMITS_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "AUTHORITYLIMITS_ID_SEQ", name = "AUTHORITYLIMITS_ID_GENERATOR")
-    private java.lang.Long id;
+	@org.kie.api.definition.type.Label(value = "Name")
+	private java.lang.String name;
 
-    public AuthorityLimits() {
-    }
-    
-    public AuthorityLimits(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "Description")
+	private java.lang.String description;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "Amount")
+	private java.lang.Float amount;
 
+	@org.kie.api.definition.type.Label(value = "Factor")
+	private java.lang.Integer factor;
 
+	@org.kie.api.definition.type.Label(value = "Payment")
+	private java.lang.Integer payment;
 
+	@org.kie.api.definition.type.Label(value = "Category")
+	private java.lang.String category;
+
+	@org.kie.api.definition.type.Label(value = "Entity")
+	private java.lang.String entity;
+
+	public AuthorityLimits() {
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(java.lang.String description) {
+		this.description = description;
+	}
+
+	public java.lang.Float getAmount() {
+		return this.amount;
+	}
+
+	public void setAmount(java.lang.Float amount) {
+		this.amount = amount;
+	}
+
+	public java.lang.Integer getFactor() {
+		return this.factor;
+	}
+
+	public void setFactor(java.lang.Integer factor) {
+		this.factor = factor;
+	}
+
+	public java.lang.Integer getPayment() {
+		return this.payment;
+	}
+
+	public void setPayment(java.lang.Integer payment) {
+		this.payment = payment;
+	}
+
+	public java.lang.String getCategory() {
+		return this.category;
+	}
+
+	public void setCategory(java.lang.String category) {
+		this.category = category;
+	}
+
+	public java.lang.String getEntity() {
+		return this.entity;
+	}
+
+	public void setEntity(java.lang.String entity) {
+		this.entity = entity;
+	}
+
+	public AuthorityLimits(java.lang.String name, java.lang.String description,
+			java.lang.Float amount, java.lang.Integer factor,
+			java.lang.Integer payment, java.lang.String category,
+			java.lang.String entity) {
+		this.name = name;
+		this.description = description;
+		this.amount = amount;
+		this.factor = factor;
+		this.payment = payment;
+		this.category = category;
+		this.entity = entity;
+	}
 
 }
