@@ -7,29 +7,61 @@ package com.myspace.eotworkflow;
 @javax.persistence.Entity
 public class User implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "USER_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "USER_ID_SEQ", name = "USER_ID_GENERATOR")
-    private java.lang.Long id;
+	@org.kie.api.definition.type.Label(value = "First Name")
+	private java.lang.String firstname;
 
-    public User() {
-    }
-    
-    public User(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "Last Name")
+	private java.lang.String lastname;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "SSO")
+	private java.lang.Integer sso;
 
+	@org.kie.api.definition.type.Label(value = "User Status")
+	private java.lang.String userstatus;
 
+	public User() {
+	}
 
+	public java.lang.String getFirstname() {
+		return this.firstname;
+	}
+
+	public void setFirstname(java.lang.String firstname) {
+		this.firstname = firstname;
+	}
+
+	public java.lang.String getLastname() {
+		return this.lastname;
+	}
+
+	public void setLastname(java.lang.String lastname) {
+		this.lastname = lastname;
+	}
+
+	public java.lang.Integer getSso() {
+		return this.sso;
+	}
+
+	public void setSso(java.lang.Integer sso) {
+		this.sso = sso;
+	}
+
+	public java.lang.String getUserstatus() {
+		return this.userstatus;
+	}
+
+	public void setUserstatus(java.lang.String userstatus) {
+		this.userstatus = userstatus;
+	}
+
+	public User(java.lang.String firstname, java.lang.String lastname,
+			java.lang.Integer sso, java.lang.String userstatus) {
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.sso = sso;
+		this.userstatus = userstatus;
+	}
 
 }
