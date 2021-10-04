@@ -9,26 +9,29 @@ public class AuthorityLimits implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Name")
+	@org.kie.api.definition.type.Label("Name")
 	private java.lang.String name;
 
-	@org.kie.api.definition.type.Label(value = "Description")
+	@org.kie.api.definition.type.Label("Description")
 	private java.lang.String description;
 
-	@org.kie.api.definition.type.Label(value = "Amount")
-	private java.lang.Float amount;
-
-	@org.kie.api.definition.type.Label(value = "Factor")
+	@org.kie.api.definition.type.Label("Factor")
 	private java.lang.Integer factor;
 
-	@org.kie.api.definition.type.Label(value = "Payment")
+	@org.kie.api.definition.type.Label("Payment")
 	private java.lang.Integer payment;
 
-	@org.kie.api.definition.type.Label(value = "Category")
+	@org.kie.api.definition.type.Label("Category")
 	private java.lang.String category;
 
-	@org.kie.api.definition.type.Label(value = "Entity")
+	@org.kie.api.definition.type.Label("Entity")
 	private java.lang.String entity;
+
+	@org.kie.api.definition.type.Label(value = "Limit Amount")
+	private java.lang.Float limitamount;
+
+	@org.kie.api.definition.type.Label(value = "Given Amount")
+	private java.lang.Float givenamount;
 
 	public AuthorityLimits() {
 	}
@@ -47,14 +50,6 @@ public class AuthorityLimits implements java.io.Serializable {
 
 	public void setDescription(java.lang.String description) {
 		this.description = description;
-	}
-
-	public java.lang.Float getAmount() {
-		return this.amount;
-	}
-
-	public void setAmount(java.lang.Float amount) {
-		this.amount = amount;
 	}
 
 	public java.lang.Integer getFactor() {
@@ -89,17 +84,34 @@ public class AuthorityLimits implements java.io.Serializable {
 		this.entity = entity;
 	}
 
+	public java.lang.Float getLimitamount() {
+		return this.limitamount;
+	}
+
+	public void setLimitamount(java.lang.Float limitamount) {
+		this.limitamount = limitamount;
+	}
+
+	public java.lang.Float getGivenamount() {
+		return this.givenamount;
+	}
+
+	public void setGivenamount(java.lang.Float givenamount) {
+		this.givenamount = givenamount;
+	}
+
 	public AuthorityLimits(java.lang.String name, java.lang.String description,
-			java.lang.Float amount, java.lang.Integer factor,
-			java.lang.Integer payment, java.lang.String category,
-			java.lang.String entity) {
+			java.lang.Integer factor, java.lang.Integer payment,
+			java.lang.String category, java.lang.String entity,
+			java.lang.Float limitamount, java.lang.Float givenamount) {
 		this.name = name;
 		this.description = description;
-		this.amount = amount;
 		this.factor = factor;
 		this.payment = payment;
 		this.category = category;
 		this.entity = entity;
+		this.limitamount = limitamount;
+		this.givenamount = givenamount;
 	}
 
 }
