@@ -42,37 +42,6 @@
                 <compositeJunctionType>&amp;&amp;</compositeJunctionType>
                 <constraints>
                   <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-                    <value>$name</value>
-                    <operator>==</operator>
-                    <constraintValueType>7</constraintValueType>
-                    <expression>
-                      <parts/>
-                      <index>2147483647</index>
-                    </expression>
-                    <parameters/>
-                    <factType>AuthorityLimits</factType>
-                    <fieldName>name</fieldName>
-                    <fieldType>java.lang.String</fieldType>
-                    <expLeftSide>
-                      <parts>
-                        <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
-                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
-                            <name>name</name>
-                            <classType>java.lang.String</classType>
-                            <genericType>String</genericType>
-                          </next>
-                          <name>AuthorityLimits</name>
-                          <classType>AuthorityLimits</classType>
-                          <genericType>AuthorityLimits</genericType>
-                          <factType>AuthorityLimits</factType>
-                        </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
-                      </parts>
-                      <index>2147483647</index>
-                    </expLeftSide>
-                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
                     <value>$description</value>
                     <operator>==</operator>
                     <constraintValueType>7</constraintValueType>
@@ -103,6 +72,37 @@
                       <index>2147483647</index>
                     </expLeftSide>
                   </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                    <value>$name</value>
+                    <operator>==</operator>
+                    <constraintValueType>7</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>AuthorityLimits</factType>
+                    <fieldName>name</fieldName>
+                    <fieldType>java.lang.String</fieldType>
+                    <expLeftSide>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                            <name>name</name>
+                            <classType>java.lang.String</classType>
+                            <genericType>String</genericType>
+                          </next>
+                          <name>AuthorityLimits</name>
+                          <classType>AuthorityLimits</classType>
+                          <genericType>AuthorityLimits</genericType>
+                          <factType>AuthorityLimits</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expLeftSide>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
                 </constraints>
               </org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
             </constraints>
@@ -115,6 +115,17 @@
         </org.drools.workbench.models.datamodel.rule.FactPattern>
       </definition>
       <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Authority Limit</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>description</factField>
+          <fieldType>String</fieldType>
+          <parameters/>
+          <varName>$description</varName>
+          <factType>AuthorityLimits</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <typedDefaultValue>
             <valueString></valueString>
@@ -129,22 +140,6 @@
           <fieldType>String</fieldType>
           <parameters/>
           <varName>$name</varName>
-          <factType>AuthorityLimits</factType>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>100</width>
-          <header>Authority Limit</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>description</factField>
-          <fieldType>String</fieldType>
-          <parameters/>
-          <varName>$description</varName>
           <factType>AuthorityLimits</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
@@ -467,65 +462,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>OEC</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>userandauthoritylimits</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value reference="../value[5]"/>
-      <value>
-        <valueNumeric class="float">1500000.0</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_FLOAT</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="float">0.0</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_FLOAT</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="int">0</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="int">0</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="int">213047584</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-    </list>
-    <list>
-      <value>
-        <valueNumeric class="int">2</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_INTEGER</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>RV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -574,7 +510,7 @@
     </list>
     <list>
       <value>
-        <valueNumeric class="int">3</valueNumeric>
+        <valueNumeric class="int">2</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
@@ -633,7 +569,7 @@
     </list>
     <list>
       <value>
-        <valueNumeric class="int">4</valueNumeric>
+        <valueNumeric class="int">3</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
@@ -673,6 +609,65 @@
       </value>
       <value>
         <valueNumeric class="int">2</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">213047584</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">4</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>OEC</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>userandauthoritylimits</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../value[5]"/>
+      <value>
+        <valueNumeric class="float">1500000.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_FLOAT</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="float">0.0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_FLOAT</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
