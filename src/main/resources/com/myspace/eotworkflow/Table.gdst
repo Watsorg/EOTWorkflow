@@ -462,11 +462,13 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueNumeric class="float">1500000.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueNumeric class="int">0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
