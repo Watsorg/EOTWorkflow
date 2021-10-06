@@ -30,12 +30,6 @@ public class AuthorityLimits implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Limit Amount")
 	private java.lang.Float limitamount;
 
-	@org.kie.api.definition.type.Label("Given Amount")
-	private java.lang.Float givenamount;
-
-	@org.kie.api.definition.type.Label(value = "Given Payment")
-	private java.lang.Integer givenpayment;
-
 	public AuthorityLimits() {
 	}
 
@@ -95,27 +89,10 @@ public class AuthorityLimits implements java.io.Serializable {
 		this.limitamount = limitamount;
 	}
 
-	public java.lang.Float getGivenamount() {
-		return this.givenamount;
-	}
-
-	public void setGivenamount(java.lang.Float givenamount) {
-		this.givenamount = givenamount;
-	}
-
-	public java.lang.Integer getGivenpayment() {
-		return this.givenpayment;
-	}
-
-	public void setGivenpayment(java.lang.Integer givenpayment) {
-		this.givenpayment = givenpayment;
-	}
-
 	public AuthorityLimits(java.lang.String name, java.lang.String description,
 			java.lang.Integer factor, java.lang.Integer payment,
 			java.lang.String category, java.lang.String entity,
-			java.lang.Float limitamount, java.lang.Float givenamount,
-			java.lang.Integer givenpayment) {
+			java.lang.Float limitamount) {
 		this.name = name;
 		this.description = description;
 		this.factor = factor;
@@ -123,8 +100,6 @@ public class AuthorityLimits implements java.io.Serializable {
 		this.category = category;
 		this.entity = entity;
 		this.limitamount = limitamount;
-		this.givenamount = givenamount;
-		this.givenpayment = givenpayment;
 	}
 
 }
