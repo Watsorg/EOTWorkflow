@@ -21,18 +21,6 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>159</width>
-      <attribute>activation-group</attribute>
-      <reverseOrder>false</reverseOrder>
-      <useRowNumber>false</useRowNumber>
-    </attribute-column52>
-    <attribute-column52>
-      <typedDefaultValue>
-        <valueString>userandauthoritylimits</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </typedDefaultValue>
-      <hideColumn>false</hideColumn>
       <width>100</width>
       <attribute>ruleflow-group</attribute>
       <reverseOrder>false</reverseOrder>
@@ -43,78 +31,116 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>OEC to Bengt</header>
+      <header>Given Values</header>
       <constraintValueType>1</constraintValueType>
       <parameters/>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FactPattern>
+          <constraintList>
+            <constraints>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                <value>$givenamount_greater</value>
+                <operator>&gt;</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>AuthorityLimits</factType>
+                <fieldName>givenamount</fieldName>
+                <fieldType>java.lang.Float</fieldType>
+                <expLeftSide>
+                  <parts>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                        <name>givenamount</name>
+                        <classType>java.lang.Float</classType>
+                        <genericType>Float</genericType>
+                      </next>
+                      <name>AuthorityLimits</name>
+                      <classType>AuthorityLimits</classType>
+                      <genericType>AuthorityLimits</genericType>
+                      <factType>AuthorityLimits</factType>
+                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                  </parts>
+                  <index>2147483647</index>
+                </expLeftSide>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                <value>$givenpayment_greater</value>
+                <operator>&gt;</operator>
+                <constraintValueType>7</constraintValueType>
+                <expression>
+                  <parts/>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>AuthorityLimits</factType>
+                <fieldName>givenpayment</fieldName>
+                <fieldType>java.lang.Integer</fieldType>
+                <expLeftSide>
+                  <parts>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                        <name>givenpayment</name>
+                        <classType>java.lang.Integer</classType>
+                        <genericType>Integer</genericType>
+                      </next>
+                      <name>AuthorityLimits</name>
+                      <classType>AuthorityLimits</classType>
+                      <genericType>AuthorityLimits</genericType>
+                      <factType>AuthorityLimits</factType>
+                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                  </parts>
+                  <index>2147483647</index>
+                </expLeftSide>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+            </constraints>
+          </constraintList>
           <factType>AuthorityLimits</factType>
           <isNegated>false</isNegated>
           <window>
             <parameters/>
           </window>
         </org.drools.workbench.models.datamodel.rule.FactPattern>
-        <org.drools.workbench.models.datamodel.rule.FromCompositeFactPattern>
-          <expression>
-            <parts>
-              <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
-                <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
-                  <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                  <next class="org.drools.workbench.models.datamodel.rule.ExpressionMethod">
-                    <prev class="org.drools.workbench.models.datamodel.rule.ExpressionField" reference="../.."/>
-                    <name>compareTo</name>
-                    <classType>int</classType>
-                    <genericType>Integer</genericType>
-                    <params>
-                      <entry>
-                        <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
-                          <index>0</index>
-                          <dataType>Float</dataType>
-                        </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
-                        <org.drools.workbench.models.datamodel.rule.ExpressionFormLine>
-                          <parts>
-                            <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
-                              <name>1500000</name>
-                              <classType>Float</classType>
-                              <genericType>Float</genericType>
-                            </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
-                          </parts>
-                          <index>0</index>
-                        </org.drools.workbench.models.datamodel.rule.ExpressionFormLine>
-                      </entry>
-                    </params>
-                  </next>
-                  <name>givenamount</name>
-                  <classType>java.lang.Float</classType>
-                  <genericType>Float</genericType>
-                </next>
-                <name>limits</name>
-                <classType>AuthorityLimits</classType>
-                <genericType>AuthorityLimits</genericType>
-                <factType>AuthorityLimits</factType>
-              </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
-              <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
-              <org.drools.workbench.models.datamodel.rule.ExpressionMethod reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next/next"/>
-            </parts>
-            <index>2147483647</index>
-          </expression>
-        </org.drools.workbench.models.datamodel.rule.FromCompositeFactPattern>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <typedDefaultValue>
-            <valueBoolean>false</valueBoolean>
             <valueString></valueString>
-            <dataType>BOOLEAN</dataType>
+            <dataType>NUMERIC_FLOAT</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>OEC to Bengt</header>
+          <header>Given Values</header>
           <constraintValueType>1</constraintValueType>
-          <fieldType>Boolean</fieldType>
+          <factField>givenamount</factField>
+          <fieldType>Float</fieldType>
           <parameters/>
-          <varName></varName>
+          <varName>$givenamount_greater</varName>
+          <factType>AuthorityLimits</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>NUMERIC_INTEGER</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Given Values</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>givenpayment</factField>
+          <fieldType>Integer</fieldType>
+          <parameters/>
+          <varName>$givenpayment_greater</varName>
+          <factType>AuthorityLimits</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
