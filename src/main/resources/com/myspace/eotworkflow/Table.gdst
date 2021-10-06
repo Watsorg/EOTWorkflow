@@ -31,6 +31,127 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
+      <header>Authority Limit</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FactPattern>
+          <constraintList>
+            <constraints>
+              <org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+                <compositeJunctionType>&amp;&amp;</compositeJunctionType>
+                <constraints>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                    <value>$description</value>
+                    <operator>==</operator>
+                    <constraintValueType>7</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>AuthorityLimits</factType>
+                    <fieldName>description</fieldName>
+                    <fieldType>java.lang.String</fieldType>
+                    <expLeftSide>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                            <name>description</name>
+                            <classType>java.lang.String</classType>
+                            <genericType>String</genericType>
+                          </next>
+                          <name>AuthorityLimits</name>
+                          <classType>AuthorityLimits</classType>
+                          <genericType>AuthorityLimits</genericType>
+                          <factType>AuthorityLimits</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expLeftSide>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                    <value>$name</value>
+                    <operator>==</operator>
+                    <constraintValueType>7</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>AuthorityLimits</factType>
+                    <fieldName>name</fieldName>
+                    <fieldType>java.lang.String</fieldType>
+                    <expLeftSide>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                            <name>name</name>
+                            <classType>java.lang.String</classType>
+                            <genericType>String</genericType>
+                          </next>
+                          <name>AuthorityLimits</name>
+                          <classType>AuthorityLimits</classType>
+                          <genericType>AuthorityLimits</genericType>
+                          <factType>AuthorityLimits</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expLeftSide>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                </constraints>
+              </org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+            </constraints>
+          </constraintList>
+          <factType>AuthorityLimits</factType>
+          <isNegated>false</isNegated>
+          <window>
+            <parameters/>
+          </window>
+        </org.drools.workbench.models.datamodel.rule.FactPattern>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Authority Limit</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>description</factField>
+          <fieldType>String</fieldType>
+          <parameters/>
+          <varName>$description</varName>
+          <factType>AuthorityLimits</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Authority Limit</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>name</factField>
+          <fieldType>String</fieldType>
+          <parameters/>
+          <varName>$name</varName>
+          <factType>AuthorityLimits</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
       <header>Limit Amount</header>
       <constraintValueType>1</constraintValueType>
       <parameters/>
@@ -346,12 +467,22 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>OEC</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>userandauthoritylimits</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -399,12 +530,22 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>RV</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>userandauthoritylimits</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -452,12 +593,22 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString>OTP</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>userandauthoritylimits</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -505,12 +656,22 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString></valueString>
+        <valueString># OF OTP PAYMENTS</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueString>userandauthoritylimits</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
