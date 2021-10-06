@@ -38,37 +38,73 @@
         <org.drools.workbench.models.datamodel.rule.FactPattern>
           <constraintList>
             <constraints>
-              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-                <value>$givenamount_greater</value>
-                <operator>&gt;</operator>
-                <constraintValueType>7</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>AuthorityLimits</factType>
-                <fieldName>givenamount</fieldName>
-                <fieldType>java.lang.Float</fieldType>
-                <expLeftSide>
-                  <parts>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
-                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
-                        <name>givenamount</name>
-                        <classType>java.lang.Float</classType>
-                        <genericType>Float</genericType>
-                      </next>
-                      <name>AuthorityLimits</name>
-                      <classType>AuthorityLimits</classType>
-                      <genericType>AuthorityLimits</genericType>
-                      <factType>AuthorityLimits</factType>
-                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
-                  </parts>
-                  <index>2147483647</index>
-                </expLeftSide>
-              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+              <org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+                <compositeJunctionType>&amp;&amp;</compositeJunctionType>
+                <constraints>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                    <value>$givenamount_greater</value>
+                    <operator>&gt;</operator>
+                    <constraintValueType>7</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>AuthorityLimits</factType>
+                    <fieldName>givenamount</fieldName>
+                    <fieldType>java.lang.Float</fieldType>
+                    <expLeftSide>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                            <name>givenamount</name>
+                            <classType>java.lang.Float</classType>
+                            <genericType>Float</genericType>
+                          </next>
+                          <name>AuthorityLimits</name>
+                          <classType>AuthorityLimits</classType>
+                          <genericType>AuthorityLimits</genericType>
+                          <factType>AuthorityLimits</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expLeftSide>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                    <value>0</value>
+                    <operator>==</operator>
+                    <constraintValueType>1</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>AuthorityLimits</factType>
+                    <fieldName>givenpayment</fieldName>
+                    <fieldType>java.lang.Integer</fieldType>
+                    <expLeftSide>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                            <name>givenpayment</name>
+                            <classType>java.lang.Integer</classType>
+                            <genericType>Integer</genericType>
+                          </next>
+                          <name>AuthorityLimits</name>
+                          <classType>AuthorityLimits</classType>
+                          <genericType>AuthorityLimits</genericType>
+                          <factType>AuthorityLimits</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expLeftSide>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                </constraints>
+              </org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
             </constraints>
           </constraintList>
           <factType>AuthorityLimits</factType>
@@ -86,7 +122,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>166</width>
+          <width>100</width>
           <header>Given Amount</header>
           <constraintValueType>1</constraintValueType>
           <factField>givenamount</factField>
@@ -107,37 +143,73 @@
         <org.drools.workbench.models.datamodel.rule.FactPattern>
           <constraintList>
             <constraints>
-              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-                <value>$givenpayment_greater</value>
-                <operator>&gt;</operator>
-                <constraintValueType>7</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>AuthorityLimits</factType>
-                <fieldName>givenpayment</fieldName>
-                <fieldType>java.lang.Integer</fieldType>
-                <expLeftSide>
-                  <parts>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
-                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
-                        <name>givenpayment</name>
-                        <classType>java.lang.Integer</classType>
-                        <genericType>Integer</genericType>
-                      </next>
-                      <name>AuthorityLimits</name>
-                      <classType>AuthorityLimits</classType>
-                      <genericType>AuthorityLimits</genericType>
-                      <factType>AuthorityLimits</factType>
-                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
-                  </parts>
-                  <index>2147483647</index>
-                </expLeftSide>
-              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+              <org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+                <compositeJunctionType>&amp;&amp;</compositeJunctionType>
+                <constraints>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                    <value>$givenpayment_greater</value>
+                    <operator>&gt;</operator>
+                    <constraintValueType>7</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>AuthorityLimits</factType>
+                    <fieldName>givenpayment</fieldName>
+                    <fieldType>java.lang.Integer</fieldType>
+                    <expLeftSide>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                            <name>givenpayment</name>
+                            <classType>java.lang.Integer</classType>
+                            <genericType>Integer</genericType>
+                          </next>
+                          <name>AuthorityLimits</name>
+                          <classType>AuthorityLimits</classType>
+                          <genericType>AuthorityLimits</genericType>
+                          <factType>AuthorityLimits</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expLeftSide>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                    <value>2.0</value>
+                    <operator>==</operator>
+                    <constraintValueType>1</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>AuthorityLimits</factType>
+                    <fieldName>givenamount</fieldName>
+                    <fieldType>java.lang.Float</fieldType>
+                    <expLeftSide>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                            <name>givenamount</name>
+                            <classType>java.lang.Float</classType>
+                            <genericType>Float</genericType>
+                          </next>
+                          <name>AuthorityLimits</name>
+                          <classType>AuthorityLimits</classType>
+                          <genericType>AuthorityLimits</genericType>
+                          <factType>AuthorityLimits</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expLeftSide>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                </constraints>
+              </org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
             </constraints>
           </constraintList>
           <factType>AuthorityLimits</factType>
@@ -155,7 +227,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>198</width>
+          <width>100</width>
           <header>Given Payment</header>
           <constraintValueType>1</constraintValueType>
           <factField>givenpayment</factField>
