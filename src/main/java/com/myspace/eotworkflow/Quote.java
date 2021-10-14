@@ -8,14 +8,20 @@ public class Quote implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Sequence Num")
+	@org.kie.api.definition.type.Label("Sequence Num")
 	private java.lang.Integer sequencenum;
-	@org.kie.api.definition.type.Label(value = "Prospect Num")
+	@org.kie.api.definition.type.Label("Prospect Num")
 	private java.lang.Integer prospectnum;
-	@org.kie.api.definition.type.Label(value = "Customer Name")
+	@org.kie.api.definition.type.Label("Customer Name")
 	private java.lang.String customername;
-	@org.kie.api.definition.type.Label(value = "Option Type")
+	@org.kie.api.definition.type.Label("Option Type")
 	private java.lang.String optiontype;
+
+	@org.kie.api.definition.type.Label(value = "Syndication")
+	private java.lang.Boolean syndication;
+
+	@org.kie.api.definition.type.Label(value = "Legal Entity Code")
+	private java.lang.String legalentitycode;
 
 	public Quote() {
 	}
@@ -52,12 +58,31 @@ public class Quote implements java.io.Serializable {
 		this.optiontype = optiontype;
 	}
 
+	public java.lang.Boolean getSyndication() {
+		return this.syndication;
+	}
+
+	public void setSyndication(java.lang.Boolean syndication) {
+		this.syndication = syndication;
+	}
+
+	public java.lang.String getLegalentitycode() {
+		return this.legalentitycode;
+	}
+
+	public void setLegalentitycode(java.lang.String legalentitycode) {
+		this.legalentitycode = legalentitycode;
+	}
+
 	public Quote(java.lang.Integer sequencenum, java.lang.Integer prospectnum,
-			java.lang.String customername, java.lang.String optiontype) {
+			java.lang.String customername, java.lang.String optiontype,
+			java.lang.Boolean syndication, java.lang.String legalentitycode) {
 		this.sequencenum = sequencenum;
 		this.prospectnum = prospectnum;
 		this.customername = customername;
 		this.optiontype = optiontype;
+		this.syndication = syndication;
+		this.legalentitycode = legalentitycode;
 	}
 
 }
