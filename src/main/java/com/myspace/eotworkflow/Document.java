@@ -6,12 +6,47 @@ package com.myspace.eotworkflow;
 
 public class Document implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Document() {
-    }
+	@org.kie.api.definition.type.Label(value = "Name")
+	private java.lang.String name;
+	@org.kie.api.definition.type.Label(value = "Quote Option Type")
+	private java.lang.String quoteoptiontype;
+	@org.kie.api.definition.type.Label(value = "Description")
+	private java.lang.String description;
 
+	public Document() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getQuoteoptiontype() {
+		return this.quoteoptiontype;
+	}
+
+	public void setQuoteoptiontype(java.lang.String quoteoptiontype) {
+		this.quoteoptiontype = quoteoptiontype;
+	}
+
+	public java.lang.String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(java.lang.String description) {
+		this.description = description;
+	}
+
+	public Document(java.lang.String name, java.lang.String quoteoptiontype,
+			java.lang.String description) {
+		this.name = name;
+		this.quoteoptiontype = quoteoptiontype;
+		this.description = description;
+	}
 
 }
