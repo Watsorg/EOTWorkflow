@@ -6,12 +6,47 @@ package com.myspace.eotworkflow;
 
 public class Approvals implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Approvals() {
-    }
+	@org.kie.api.definition.type.Label(value = "SSO")
+	private java.lang.Integer sso;
+	@org.kie.api.definition.type.Label(value = "User Name")
+	private java.lang.String username;
+	@org.kie.api.definition.type.Label(value = "Business Team")
+	private java.lang.String businessteam;
 
+	public Approvals() {
+	}
 
+	public java.lang.Integer getSso() {
+		return this.sso;
+	}
 
+	public void setSso(java.lang.Integer sso) {
+		this.sso = sso;
+	}
+
+	public java.lang.String getUsername() {
+		return this.username;
+	}
+
+	public void setUsername(java.lang.String username) {
+		this.username = username;
+	}
+
+	public java.lang.String getBusinessteam() {
+		return this.businessteam;
+	}
+
+	public void setBusinessteam(java.lang.String businessteam) {
+		this.businessteam = businessteam;
+	}
+
+	public Approvals(java.lang.Integer sso, java.lang.String username,
+			java.lang.String businessteam) {
+		this.sso = sso;
+		this.username = username;
+		this.businessteam = businessteam;
+	}
 
 }
