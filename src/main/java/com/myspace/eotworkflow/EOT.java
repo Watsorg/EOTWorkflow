@@ -6,12 +6,220 @@ package com.myspace.eotworkflow;
 
 public class EOT implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public EOT() {
-    }
+	@org.kie.api.definition.type.Label(value = "Payoff")
+	private java.lang.Integer payoff;
+	@org.kie.api.definition.type.Label(value = "Workflow")
+	private java.lang.String workflow;
+	@org.kie.api.definition.type.Label(value = "Sequence Num")
+	private java.lang.Integer sequencenum;
+	@org.kie.api.definition.type.Label(value = "Quote Option Type")
+	private java.lang.String quoteoptiontype;
+	@org.kie.api.definition.type.Label(value = "Effective Date")
+	private java.time.LocalDate effectivedate;
+	@org.kie.api.definition.type.Label(value = "Workflow Expiry Date")
+	private java.time.LocalDate workflowexpirydate;
+	@org.kie.api.definition.type.Label(value = "FMV $")
+	private java.lang.Float fmv$;
+	@org.kie.api.definition.type.Label(value = "FMV Percent")
+	private java.lang.Float fmvpercent;
+	@org.kie.api.definition.type.Label(value = "Future Payments")
+	private java.lang.Float futurepayments;
+	@org.kie.api.definition.type.Label(value = "Future Service")
+	private java.lang.Float futureservice;
+	@org.kie.api.definition.type.Label(value = "Sales Price")
+	private java.lang.Double salesprice;
+	@org.kie.api.definition.type.Label(value = "Estimated Property Tax")
+	private java.lang.Double estimatedpropertytax;
+	@org.kie.api.definition.type.Label(value = "Receivable Balance")
+	private java.lang.Float receivablebalance;
+	@org.kie.api.definition.type.Label(value = "Sales Tax")
+	private java.lang.Float salestax;
+	@org.kie.api.definition.type.Label(value = "Security Deposit")
+	private java.lang.Float securitydeposit;
+	@org.kie.api.definition.type.Label(value = "Total Buyout/Payoff")
+	private java.lang.Float totalbuyoutpayoff;
+	@org.kie.api.definition.type.Label(value = "NBV as of Effective Date")
+	private java.lang.Float nbv;
+	@org.kie.api.definition.type.Label(value = "Buyout Gain/Loss")
+	private java.lang.Float buyoutgainloss;
 
+	public EOT() {
+	}
 
+	public java.lang.Integer getPayoff() {
+		return this.payoff;
+	}
 
+	public void setPayoff(java.lang.Integer payoff) {
+		this.payoff = payoff;
+	}
+
+	public java.lang.String getWorkflow() {
+		return this.workflow;
+	}
+
+	public void setWorkflow(java.lang.String workflow) {
+		this.workflow = workflow;
+	}
+
+	public java.lang.Integer getSequencenum() {
+		return this.sequencenum;
+	}
+
+	public void setSequencenum(java.lang.Integer sequencenum) {
+		this.sequencenum = sequencenum;
+	}
+
+	public java.lang.String getQuoteoptiontype() {
+		return this.quoteoptiontype;
+	}
+
+	public void setQuoteoptiontype(java.lang.String quoteoptiontype) {
+		this.quoteoptiontype = quoteoptiontype;
+	}
+
+	public java.time.LocalDate getEffectivedate() {
+		return this.effectivedate;
+	}
+
+	public void setEffectivedate(java.time.LocalDate effectivedate) {
+		this.effectivedate = effectivedate;
+	}
+
+	public java.time.LocalDate getWorkflowexpirydate() {
+		return this.workflowexpirydate;
+	}
+
+	public void setWorkflowexpirydate(java.time.LocalDate workflowexpirydate) {
+		this.workflowexpirydate = workflowexpirydate;
+	}
+
+	public java.lang.Float getFmv$() {
+		return this.fmv$;
+	}
+
+	public void setFmv$(java.lang.Float fmv$) {
+		this.fmv$ = fmv$;
+	}
+
+	public java.lang.Float getFmvpercent() {
+		return this.fmvpercent;
+	}
+
+	public void setFmvpercent(java.lang.Float fmvpercent) {
+		this.fmvpercent = fmvpercent;
+	}
+
+	public java.lang.Float getFuturepayments() {
+		return this.futurepayments;
+	}
+
+	public void setFuturepayments(java.lang.Float futurepayments) {
+		this.futurepayments = futurepayments;
+	}
+
+	public java.lang.Float getFutureservice() {
+		return this.futureservice;
+	}
+
+	public void setFutureservice(java.lang.Float futureservice) {
+		this.futureservice = futureservice;
+	}
+
+	public java.lang.Double getSalesprice() {
+		return this.salesprice;
+	}
+
+	public void setSalesprice(java.lang.Double salesprice) {
+		this.salesprice = salesprice;
+	}
+
+	public java.lang.Double getEstimatedpropertytax() {
+		return this.estimatedpropertytax;
+	}
+
+	public void setEstimatedpropertytax(java.lang.Double estimatedpropertytax) {
+		this.estimatedpropertytax = estimatedpropertytax;
+	}
+
+	public java.lang.Float getReceivablebalance() {
+		return this.receivablebalance;
+	}
+
+	public void setReceivablebalance(java.lang.Float receivablebalance) {
+		this.receivablebalance = receivablebalance;
+	}
+
+	public java.lang.Float getSalestax() {
+		return this.salestax;
+	}
+
+	public void setSalestax(java.lang.Float salestax) {
+		this.salestax = salestax;
+	}
+
+	public java.lang.Float getSecuritydeposit() {
+		return this.securitydeposit;
+	}
+
+	public void setSecuritydeposit(java.lang.Float securitydeposit) {
+		this.securitydeposit = securitydeposit;
+	}
+
+	public java.lang.Float getTotalbuyoutpayoff() {
+		return this.totalbuyoutpayoff;
+	}
+
+	public void setTotalbuyoutpayoff(java.lang.Float totalbuyoutpayoff) {
+		this.totalbuyoutpayoff = totalbuyoutpayoff;
+	}
+
+	public java.lang.Float getNbv() {
+		return this.nbv;
+	}
+
+	public void setNbv(java.lang.Float nbv) {
+		this.nbv = nbv;
+	}
+
+	public java.lang.Float getBuyoutgainloss() {
+		return this.buyoutgainloss;
+	}
+
+	public void setBuyoutgainloss(java.lang.Float buyoutgainloss) {
+		this.buyoutgainloss = buyoutgainloss;
+	}
+
+	public EOT(java.lang.Integer payoff, java.lang.String workflow,
+			java.lang.Integer sequencenum, java.lang.String quoteoptiontype,
+			java.time.LocalDate effectivedate,
+			java.time.LocalDate workflowexpirydate, java.lang.Float fmv$,
+			java.lang.Float fmvpercent, java.lang.Float futurepayments,
+			java.lang.Float futureservice, java.lang.Double salesprice,
+			java.lang.Double estimatedpropertytax,
+			java.lang.Float receivablebalance, java.lang.Float salestax,
+			java.lang.Float securitydeposit, java.lang.Float totalbuyoutpayoff,
+			java.lang.Float nbv, java.lang.Float buyoutgainloss) {
+		this.payoff = payoff;
+		this.workflow = workflow;
+		this.sequencenum = sequencenum;
+		this.quoteoptiontype = quoteoptiontype;
+		this.effectivedate = effectivedate;
+		this.workflowexpirydate = workflowexpirydate;
+		this.fmv$ = fmv$;
+		this.fmvpercent = fmvpercent;
+		this.futurepayments = futurepayments;
+		this.futureservice = futureservice;
+		this.salesprice = salesprice;
+		this.estimatedpropertytax = estimatedpropertytax;
+		this.receivablebalance = receivablebalance;
+		this.salestax = salestax;
+		this.securitydeposit = securitydeposit;
+		this.totalbuyoutpayoff = totalbuyoutpayoff;
+		this.nbv = nbv;
+		this.buyoutgainloss = buyoutgainloss;
+	}
 
 }
