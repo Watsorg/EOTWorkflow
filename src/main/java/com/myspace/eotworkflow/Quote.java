@@ -6,12 +6,58 @@ package com.myspace.eotworkflow;
 
 public class Quote implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Quote() {
-    }
+	@org.kie.api.definition.type.Label(value = "Sequence Num")
+	private java.lang.Integer sequencenum;
+	@org.kie.api.definition.type.Label(value = "Prospect Num")
+	private java.lang.Integer prospectnum;
+	@org.kie.api.definition.type.Label(value = "Customer Name")
+	private java.lang.String customername;
+	@org.kie.api.definition.type.Label(value = "Option Type")
+	private java.lang.String optiontype;
 
+	public Quote() {
+	}
 
+	public java.lang.Integer getSequencenum() {
+		return this.sequencenum;
+	}
 
+	public void setSequencenum(java.lang.Integer sequencenum) {
+		this.sequencenum = sequencenum;
+	}
+
+	public java.lang.Integer getProspectnum() {
+		return this.prospectnum;
+	}
+
+	public void setProspectnum(java.lang.Integer prospectnum) {
+		this.prospectnum = prospectnum;
+	}
+
+	public java.lang.String getCustomername() {
+		return this.customername;
+	}
+
+	public void setCustomername(java.lang.String customername) {
+		this.customername = customername;
+	}
+
+	public java.lang.String getOptiontype() {
+		return this.optiontype;
+	}
+
+	public void setOptiontype(java.lang.String optiontype) {
+		this.optiontype = optiontype;
+	}
+
+	public Quote(java.lang.Integer sequencenum, java.lang.Integer prospectnum,
+			java.lang.String customername, java.lang.String optiontype) {
+		this.sequencenum = sequencenum;
+		this.prospectnum = prospectnum;
+		this.customername = customername;
+		this.optiontype = optiontype;
+	}
 
 }
