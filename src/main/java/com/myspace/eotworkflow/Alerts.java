@@ -6,12 +6,24 @@ package com.myspace.eotworkflow;
 
 public class Alerts implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Alerts() {
-    }
+	@org.kie.api.definition.type.Label(value = "User")
+	private java.lang.String user;
 
+	public Alerts() {
+	}
 
+	public java.lang.String getUser() {
+		return this.user;
+	}
 
+	public void setUser(java.lang.String user) {
+		this.user = user;
+	}
+
+	public Alerts(java.lang.String user) {
+		this.user = user;
+	}
 
 }
