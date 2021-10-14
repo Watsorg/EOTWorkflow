@@ -8,8 +8,11 @@ public class Alerts implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "User")
+	@org.kie.api.definition.type.Label("User")
 	private java.lang.String user;
+
+	@org.kie.api.definition.type.Label(value = "Business Team")
+	private java.lang.String businessteam;
 
 	public Alerts() {
 	}
@@ -22,8 +25,17 @@ public class Alerts implements java.io.Serializable {
 		this.user = user;
 	}
 
-	public Alerts(java.lang.String user) {
+	public java.lang.String getBusinessteam() {
+		return this.businessteam;
+	}
+
+	public void setBusinessteam(java.lang.String businessteam) {
+		this.businessteam = businessteam;
+	}
+
+	public Alerts(java.lang.String user, java.lang.String businessteam) {
 		this.user = user;
+		this.businessteam = businessteam;
 	}
 
 }
