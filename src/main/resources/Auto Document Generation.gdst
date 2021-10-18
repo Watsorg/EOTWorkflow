@@ -16,7 +16,7 @@
   <attributeCols>
     <attribute-column52>
       <typedDefaultValue>
-        <valueString></valueString>
+        <valueString>Auto Doc Gen</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
