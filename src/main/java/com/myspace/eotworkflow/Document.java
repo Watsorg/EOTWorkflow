@@ -13,11 +13,14 @@ public class Document implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Description")
 	private java.lang.String description;
 
-	@org.kie.api.definition.type.Label(value = "Doc Name")
+	@org.kie.api.definition.type.Label("Doc Name")
 	private java.lang.String docname;
 
-	@org.kie.api.definition.type.Label(value = "Relationship Name")
+	@org.kie.api.definition.type.Label("Relationship Name")
 	private java.lang.String relationshipname;
+
+	@org.kie.api.definition.type.Label(value = "Auto Gen")
+	private java.lang.Boolean autogen;
 
 	public Document() {
 	}
@@ -54,13 +57,22 @@ public class Document implements java.io.Serializable {
 		this.relationshipname = relationshipname;
 	}
 
+	public java.lang.Boolean getAutogen() {
+		return this.autogen;
+	}
+
+	public void setAutogen(java.lang.Boolean autogen) {
+		this.autogen = autogen;
+	}
+
 	public Document(java.lang.String quoteoptiontype,
 			java.lang.String description, java.lang.String docname,
-			java.lang.String relationshipname) {
+			java.lang.String relationshipname, java.lang.Boolean autogen) {
 		this.quoteoptiontype = quoteoptiontype;
 		this.description = description;
 		this.docname = docname;
 		this.relationshipname = relationshipname;
+		this.autogen = autogen;
 	}
 
 }
