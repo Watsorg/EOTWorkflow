@@ -103,6 +103,37 @@
                       <index>2147483647</index>
                     </expLeftSide>
                   </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                    <value>$desc</value>
+                    <operator>==</operator>
+                    <constraintValueType>7</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>Document</factType>
+                    <fieldName>description</fieldName>
+                    <fieldType>java.lang.String</fieldType>
+                    <expLeftSide>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                            <name>description</name>
+                            <classType>java.lang.String</classType>
+                            <genericType>String</genericType>
+                          </next>
+                          <name>Document</name>
+                          <classType>Document</classType>
+                          <genericType>Document</genericType>
+                          <factType>Document</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expLeftSide>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
                 </constraints>
               </org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
             </constraints>
@@ -122,7 +153,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>159</width>
+          <width>100</width>
           <header>Documents</header>
           <constraintValueType>1</constraintValueType>
           <factField>relationshipname</factField>
@@ -138,13 +169,29 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>179</width>
+          <width>100</width>
           <header>Documents</header>
           <constraintValueType>1</constraintValueType>
           <factField>docname</factField>
           <fieldType>String</fieldType>
           <parameters/>
           <varName>$docname</varName>
+          <factType>Document</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <typedDefaultValue>
+            <valueString>EOT</valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Documents</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>description</factField>
+          <fieldType>String</fieldType>
+          <parameters/>
+          <varName>$desc</varName>
           <factType>Document</factType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
       </childColumns>
@@ -259,6 +306,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString>EOT</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
@@ -294,6 +346,11 @@
       </value>
       <value>
         <valueString>Bill of Sale</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>EOT</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
