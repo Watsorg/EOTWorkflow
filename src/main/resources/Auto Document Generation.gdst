@@ -21,13 +21,135 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>100</width>
+      <width>119</width>
       <attribute>ruleflow-group</attribute>
       <reverseOrder>false</reverseOrder>
       <useRowNumber>false</useRowNumber>
     </attribute-column52>
   </attributeCols>
-  <conditionPatterns/>
+  <conditionPatterns>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>Documents</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FactPattern>
+          <constraintList>
+            <constraints>
+              <org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+                <compositeJunctionType>&amp;&amp;</compositeJunctionType>
+                <constraints>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                    <value>$relationshipname</value>
+                    <operator>==</operator>
+                    <constraintValueType>7</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>Document</factType>
+                    <fieldName>relationshipname</fieldName>
+                    <fieldType>java.lang.String</fieldType>
+                    <expLeftSide>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                            <name>relationshipname</name>
+                            <classType>java.lang.String</classType>
+                            <genericType>String</genericType>
+                          </next>
+                          <name>Document</name>
+                          <classType>Document</classType>
+                          <genericType>Document</genericType>
+                          <factType>Document</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expLeftSide>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                  <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                    <value>$docname</value>
+                    <operator>==</operator>
+                    <constraintValueType>7</constraintValueType>
+                    <expression>
+                      <parts/>
+                      <index>2147483647</index>
+                    </expression>
+                    <parameters/>
+                    <factType>Document</factType>
+                    <fieldName>docname</fieldName>
+                    <fieldType>java.lang.String</fieldType>
+                    <expLeftSide>
+                      <parts>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                          <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                            <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
+                            <name>docname</name>
+                            <classType>java.lang.String</classType>
+                            <genericType>String</genericType>
+                          </next>
+                          <name>Document</name>
+                          <classType>Document</classType>
+                          <genericType>Document</genericType>
+                          <factType>Document</factType>
+                        </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
+                        <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
+                      </parts>
+                      <index>2147483647</index>
+                    </expLeftSide>
+                  </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
+                </constraints>
+              </org.drools.workbench.models.datamodel.rule.CompositeFieldConstraint>
+            </constraints>
+          </constraintList>
+          <factType>Document</factType>
+          <isNegated>false</isNegated>
+          <window>
+            <parameters/>
+          </window>
+        </org.drools.workbench.models.datamodel.rule.FactPattern>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>159</width>
+          <header>Documents</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>relationshipname</factField>
+          <fieldType>String</fieldType>
+          <parameters/>
+          <varName>$relationshipname</varName>
+          <factType>Document</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>STRING</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
+          <hideColumn>false</hideColumn>
+          <width>179</width>
+          <header>Documents</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>docname</factField>
+          <fieldType>String</fieldType>
+          <parameters/>
+          <varName>$docname</varName>
+          <factType>Document</factType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+  </conditionPatterns>
   <actionCols/>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
