@@ -8,22 +8,18 @@ public class Document implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Name")
-	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "Quote Option Type")
+	@org.kie.api.definition.type.Label("Quote Option Type")
 	private java.lang.String quoteoptiontype;
-	@org.kie.api.definition.type.Label(value = "Description")
+	@org.kie.api.definition.type.Label("Description")
 	private java.lang.String description;
 
+	@org.kie.api.definition.type.Label(value = "Doc Name")
+	private java.lang.String docname;
+
+	@org.kie.api.definition.type.Label(value = "Relationship Name")
+	private java.lang.String relationshipname;
+
 	public Document() {
-	}
-
-	public java.lang.String getName() {
-		return this.name;
-	}
-
-	public void setName(java.lang.String name) {
-		this.name = name;
 	}
 
 	public java.lang.String getQuoteoptiontype() {
@@ -42,11 +38,29 @@ public class Document implements java.io.Serializable {
 		this.description = description;
 	}
 
-	public Document(java.lang.String name, java.lang.String quoteoptiontype,
-			java.lang.String description) {
-		this.name = name;
+	public java.lang.String getDocname() {
+		return this.docname;
+	}
+
+	public void setDocname(java.lang.String docname) {
+		this.docname = docname;
+	}
+
+	public java.lang.String getRelationshipname() {
+		return this.relationshipname;
+	}
+
+	public void setRelationshipname(java.lang.String relationshipname) {
+		this.relationshipname = relationshipname;
+	}
+
+	public Document(java.lang.String quoteoptiontype,
+			java.lang.String description, java.lang.String docname,
+			java.lang.String relationshipname) {
 		this.quoteoptiontype = quoteoptiontype;
 		this.description = description;
+		this.docname = docname;
+		this.relationshipname = relationshipname;
 	}
 
 }
