@@ -238,8 +238,9 @@
   </background>
   <settings>
     <type>RULE</type>
+    <ruleFlowGroup>autodocgen</ruleFlowGroup>
     <skipFromBuild>false</skipFromBuild>
-    <stateless>false</stateless>
+    <stateless>true</stateless>
   </settings>
   <imports>
     <imports/>
