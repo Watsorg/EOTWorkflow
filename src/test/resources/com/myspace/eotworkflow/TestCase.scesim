@@ -364,7 +364,7 @@
     <type>RULE</type>
     <ruleFlowGroup>userandauthoritylimits</ruleFlowGroup>
     <skipFromBuild>false</skipFromBuild>
-    <stateless>true</stateless>
+    <stateless>false</stateless>
   </settings>
   <imports>
     <imports/>
