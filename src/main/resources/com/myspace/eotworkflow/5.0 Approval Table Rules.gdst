@@ -378,41 +378,21 @@
     </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
   <actionCols>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+    <insert-fact-column52>
+      <typedDefaultValue>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>SSO</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.ActionInsertFact>
-          <fieldValues>
-            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>sso</field>
-              <value>$sso</value>
-              <nature>7</nature>
-              <type>Integer</type>
-            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-          </fieldValues>
-          <factType>User</factType>
-          <isBound>false</isBound>
-        </org.drools.workbench.models.datamodel.rule.ActionInsertFact>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>NUMERIC_INTEGER</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>100</width>
-          <header>SSO</header>
-          <varName>$sso</varName>
-          <fieldType>Integer</fieldType>
-          <factType>User</factType>
-          <factField>sso</factField>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+      <width>100</width>
+      <header>sso</header>
+      <factType>User</factType>
+      <boundName>user</boundName>
+      <factField>sso</factField>
+      <type>Integer</type>
+      <isInsertLogical>false</isInsertLogical>
+    </insert-fact-column52>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
