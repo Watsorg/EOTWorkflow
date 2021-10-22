@@ -5,7 +5,7 @@ rule "Auto Doc Gen 1"
     ruleflow-group "autodocgensample"
     dialect "mvel"
     when
-        document : Document(document.docname == "OffertoPurchase" && document.relationshipname == "Buyout" && document.desc == "EOT")
+        document : Document(document.docname == "OffertoPurchase" && document.relationshipname == "Buyout" && document.description == "EOT")
     then
         document.setAutogen(true);
 end
