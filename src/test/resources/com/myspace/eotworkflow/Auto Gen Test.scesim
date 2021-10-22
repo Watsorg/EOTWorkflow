@@ -238,9 +238,9 @@
   </background>
   <settings>
     <type>RULE</type>
-    <ruleFlowGroup>autodocgen</ruleFlowGroup>
+    <ruleFlowGroup>Auto Doc Gen</ruleFlowGroup>
     <skipFromBuild>false</skipFromBuild>
-    <stateless>true</stateless>
+    <stateless>false</stateless>
   </settings>
   <imports>
     <imports/>
