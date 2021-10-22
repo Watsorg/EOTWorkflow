@@ -7,6 +7,6 @@ rule "Auto Doc Gen 1"
     when
         document: Document(docname == "OffertoPurchase" && relationshipname == "Buyout" && desc == "EOT")
     then
-        document.setautogen("TRUE");
+        Document(autogen == "TRUE");
 end
 
