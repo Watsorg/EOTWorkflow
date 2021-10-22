@@ -7,6 +7,6 @@ rule "Risks rules_11"
         Document(docname == "OffertoPurchase" && relationshipname == "Buyout" && desc == "EOT");
         document: Document();
     then
-        document.setAutogen("TRUE");
+        document.setAutogen(TRUE);
 end
 
