@@ -1,2 +1,12 @@
 package com.myspace.eotworkflow;
 
+import com.myspace.eotworkflow.*;
+
+rule "Risks rules_11"
+    when
+        Document(docname == "OffertoPurchase" && relationshipname == "Buyout" && desc == "EOT");
+        document: Document();
+    then
+        document.setAutogen("TRUE");
+end
+
