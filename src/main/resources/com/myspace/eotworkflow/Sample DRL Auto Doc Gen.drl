@@ -4,6 +4,7 @@ import com.myspace.eotworkflow.*;
 
 rule "Auto Doc Gen 1"
     ruleflow-group "autodocgensample"
+    dialect "mvel"
     when
         document: Document(docname == "OffertoPurchase" && relationshipname == "Buyout" && desc == "EOT")
     then
