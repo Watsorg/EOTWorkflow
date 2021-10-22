@@ -1,5 +1,4 @@
 package com.myspace.eotworkflow;
-
 import com.myspace.eotworkflow.*;
 
 rule "Auto Doc Gen 1"
