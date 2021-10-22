@@ -3,6 +3,7 @@ package com.myspace.eotworkflow;
 import com.myspace.eotworkflow.*;
 
 rule "Auto Doc Gen 1"
+    ruleflow-group "autodocgensample"
     when
         Document(docname == "OffertoPurchase" && relationshipname == "Buyout" && desc == "EOT");
         document: Document();
