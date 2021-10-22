@@ -238,7 +238,7 @@
   </background>
   <settings>
     <type>RULE</type>
-    <ruleFlowGroup>autodocgensample</ruleFlowGroup>
+    <ruleFlowGroup>autodocgen</ruleFlowGroup>
     <skipFromBuild>false</skipFromBuild>
     <stateless>false</stateless>
   </settings>
