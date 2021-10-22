@@ -2,7 +2,7 @@ package com.myspace.eotworkflow;
 
 import com.myspace.eotworkflow.*;
 
-rule "Risks rules_11"
+rule "Auto Doc Gen 1"
     when
         Document(docname == "OffertoPurchase" && relationshipname == "Buyout" && desc == "EOT");
         document: Document();
